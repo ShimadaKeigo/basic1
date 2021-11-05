@@ -1,5 +1,6 @@
 <span style="font size:100%;">
-<p><big>個人的コード置き場（初心者）</big></p><br>
+<p><big>個人的コード置き場（初心者）</big></p>
+  p{color:red}<br>
 repl.it→https://replit.com/@ShimadaKeigo/test#main.c<br>
 Twitter→https://twitter.com/Nabura_Katabura<br>
 Instagram→ ---coming soon---<br>
