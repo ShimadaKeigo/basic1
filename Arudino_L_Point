@@ -1,0 +1,10 @@
+void setup(){
+  Pinmode(13,OUTPUT)
+}
+
+void main(){
+  digitalWrite(13,HIGH)
+  delay(1000)  //単位はms
+  digitalWrite(13,LOW)
+  delay(3000)
+}
