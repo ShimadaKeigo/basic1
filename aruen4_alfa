@@ -1,0 +1,46 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+double func_y(double x)
+{
+    double y;
+    y = x*x -2*x -2;
+    return y;
+}
+
+int main(void)
+{
+double x_s, x_l, x_m, EPSILON = 0.000001;
+int A=-100,B=+100;
+
+do{
+x_s = rand()%(B-A+1)+A;
+x_l = rand()%(B-A+1)+A;
+}while(x_s>=x_l || func_y(x_s)*func_y(x_l)>=0);
+
+int i=0;
+for(;;){
+    printf("[%3d] %.15lf %.15lf %.15lf\n",i,x_s,x_l,fabs(x_s-x_l));
+    x_m = (x_s + x_l)/2;
+    if(func_y(x_s)*func_y(x_m)<0){
+        x_l = x_m;
+    }else{
+        x_s = x_m;
+    }
+    if(fabs(x_s-x_l)<EPSILON){
+        break;
+    }
+    i++;
+}
+printf("---\n");
+printf("AcceptableErrorRange = %.15lf\n",EPSILON);
+printf("ActualErrorRange     = %.15lf\n",fabs(x_s-x_l));
+printf("---\n");
+x_m = (x_s + x_l)/2;
+printf("ApproximateSolution  = %.15lf\n",x_m);
+//printf("---\n");
+//printf("ExpeectSolution      = %.15lf\n",2.732050807568877);
+//printf("ApproximateError     = %.15lf\n",x_m - 2.732050807568877);
+return 0;
+}
