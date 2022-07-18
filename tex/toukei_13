@@ -1,0 +1,83 @@
+\documentclass[a4paper,11pt]{jsarticle}
+
+% 数式
+\usepackage{amsmath,amsfonts}
+\usepackage{bm}
+% 画像
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{rsfso}
+
+\begin{document}
+
+\title{熱統計力学第13回レポート}
+\author{21TE080 嶋田圭悟}
+\date{\today}
+\maketitle
+
+
+問題）
+\begin{enumerate}
+   \item 単原子古典理想気体についてのグランドカノニカル分配関数が
+   \begin{equation}
+    \Xi = e^{\lambda f}
+   \end{equation}
+   の形に与えられることを示し、$f$及び$\lambda$の意味を述べよ．
+   ただし，大分配関数の古典的な定義
+   \begin{equation}
+    \Xi = \sum^{\infty}_{N_A=0}\sum^{\infty}_{N_B=0}\dots \dfrac{1}{\prod N_A!h^{3N_A}}\int e^{-\beta(\mathcal{H}_N-\sum N_A\mu_A)}d\Gamma
+   \end{equation}
+   及びその一般形
+   \begin{eqnarray*}
+    \Xi & = &\left(\sum^{\infty}_{N_A=0}\sum^{\infty}_{N_B=0}\dots\right)e^{\beta N_A\mu_A}\bullet e^{\beta N_B\mu_B}\bullet \dots \bullet Z_N\\
+        & = &\left(\sum^{\infty}_{N_A=0}\sum^{\infty}_{N_B=0}\dots\right)\lambda_A^{N_A}\bullet \lambda_B^{N_B}\bullet \dots \bullet Z_N
+   \end{eqnarray*}
+   を用いること．
+   \begin{enumerate}
+       \item 
+       \item 
+   \end{enumerate}
+   \item 
+   \begin{enumerate}
+       \item 
+       \item 
+   \end{enumerate}
+\end{enumerate}
+
+\clearpage
+
+解答）
+\begin{enumerate}
+   \item 条件式より、
+   \begin{equation*}
+    \Xi = \sum \lambda^N Z_N
+   \end{equation*}
+   また，
+   \begin{eqnarray*}
+    Z_N & = &\dfrac{1}{N!h^{3N}}\int e^{-\beta \mathcal{H}_N}d\Gamma\\
+        & = &\dfrac{1}{N!}\left[\dfrac{1}{h^3}\iint e^{-\beta p^2/2m}d\bm{x}d\bm{p}\right]^N\\
+        & = &\dfrac{1}{N!}f^N
+   \end{eqnarray*}
+   上式より，$f$の表式は，
+   \begin{eqnarray*}
+    f   & = &\dfrac{1}{h^3}\iint e^{-\beta p^2/2m}d\bm{x}d\bm{p}\\
+        & = &V\left(\dfrac{2\pi mkT}{h^2}\right)^{\frac{3}{2}}
+   \end{eqnarray*}
+   となるので，$f$は体積$V$の中にある1個の粒子に対する分配関数である．
+   \begin{enumerate}
+       \item 
+       \item 
+   \end{enumerate}
+   \item
+   \begin{enumerate}
+       \item 
+       \item 
+   \end{enumerate}
+\end{enumerate}
+
+\begin{thebibliography}{99}
+   \item 久保亮五，大学演習熱学・統計力学（修訂版），pXXX,pXXX，裳華房，2000年
+   \item 森成隆夫，熱・統計力学講義ノート，pXXX，pXXX，サイエンス社，2017年
+\end{thebibliography}
+
+
+\end{document}
